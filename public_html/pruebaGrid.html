@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome-4.6.3/css/font-awesome.min.css" media="screen" />
+        <script>
+            var cerrado = true;
+
+            function f(id) {
+                menu = document.getElementById(id);
+                subMenu = document.getElementById(id + "ul");
+
+                if (subMenu.className === "sub__menu--cerrado") {
+                    subMenu.className = "sub__menu--abierto";
+                } else {
+                    subMenu.className = "sub__menu--cerrado";
+                }
+
+                //.onClick = function(){f()}
+            }
+        </script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col--12 border" style="height: 50px; background-color: #404040">
+                
+            </div>
+        </div>
+        <div class="row">
+           <div class="col--2 border" style="background-color: #4D5158;">
+            <ul class="menu">
+                <li id="item1" class="menu__item--cerrado" onclick="f(this.id)"> Item 1
+                    <ul id="item1ul" class="sub__menu--cerrado">
+                        <li class="sub__menu__item--cerrado"> Sub-item 1
+                            <ul class="sub__menu--cerrado">
+                                <li> Thing 1</li>
+                                <li> Thing 2</li>
+                            </ul>
+                        </li>
+                        <li class="sub__menu__item--cerrado"> Sub-item 2</li>
+                        <li class="sub__menu__item--documento"> Thing 1</li>
+                        <li class="sub__menu__item--documento"> Thing 2</li>
+                    </ul>
+                </li>
+                <li id="item2" class="menu__item--cerrado" onclick="f(this.id)"> Item 2
+                    <ul id="item2ul" class="sub__menu--cerrado">
+                        <li class="sub__menu__item--cerrado"> Sub-item 1</li>
+                        <li class="sub__menu__item--cerrado"> Sub-item 2</li>
+                        <li class="sub__menu__item--documento"> Thing 1</li>
+                        <li class="sub__menu__item--documento"> Thing 2</li>
+                    </ul></li>
+                <li id="item3" class="menu__item--cerrado" onclick="f(this.id)"> Item 3
+                    <ul id="item3ul" class="sub__menu--cerrado">
+                        <li class="sub__menu__item--cerrado"> Sub-item 1</li>
+                        <li class="sub__menu__item--cerrado"> Sub-item 2</li>
+                        <li class="sub__menu__item--documento"> Thing 1</li>
+                        <li class="sub__menu__item--documento"> Thing 2</li>
+                    </ul></li>
+                <li id="item4" class="menu__item--cerrado" onclick="f(this.id)"> Item 4
+                    <ul id="item4ul" class="sub__menu--cerrado">
+                        <li class="sub__menu__item--cerrado"> Sub-item 1</li>
+                        <li class="sub__menu__item--cerrado"> Sub-item 2</li>
+                        <li class="sub__menu__item--documento"> Thing 1</li>
+                        <li class="sub__menu__item--documento"> Thing 2</li>
+                    </ul></li>
+            </ul>
+        </div>
+        <div class="col--10">
+            <div class="row">
+                <div class="panel--default col--2">
+                    <header class="panel__header--default">
+                        Default
+                    </header>
+                    <div class="panel__body--default">
+                        Contenido
+                        <br>
+                        Más contenido
+                    </div>
+                </div>
+                <div class="panel--primary col--2">
+                    <header class="panel__header--primary">
+                        Primary
+                    </header>
+                    <div class="panel__body--primary">
+                        Contenido
+                        <br>
+                        Más contenido
+                    </div>
+                </div> 
+                <div class="panel--success col--2">
+                    <header class="panel__header--success">
+                        Success
+                    </header>
+                    <div class="panel__body--success">
+                        Contenido
+                        <br>
+                        Más contenido
+                    </div>
+                </div>
+                <div class="panel--info col--2">
+                    <header class="panel__header--info">
+                        Info
+                    </header>
+                    <div class="panel__body--info">
+                        Contenido
+                        <br>
+                        Más contenido
+                    </div>
+                </div>
+                <div class="panel--warning col--2">
+                    <header class="panel__header--warning">
+                        Warning
+                    </header>
+                    <div class="panel__body--warning">
+                        Contenido
+                        <br>
+                        Más contenido
+                    </div>
+                </div>
+                <div class="panel--danger col--2">
+                    <header class="panel__header--danger">
+                        Danger
+                    </header>
+                    <div class="panel__body--danger">
+                        Contenido
+                        <br>
+                        Más contenido
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="message--default col--2">
+                    Default
+                </div>
+                
+                <div class="message--primary col--2">
+                    Primary
+                </div>
+                
+                <div class="message--success col--2">
+                    Success
+                </div>
+                
+                <div class="message--info col--2">
+                    Info
+                </div>
+                
+                <div class="message--warning col--2">
+                    Warning
+                </div>
+                
+                <div class="message--danger col--2">
+                    Danger
+                </div>
+            </div>
+            <div class="row">
+                <div class="col--6">
+                    <button class="boton">Default</button>
+                    <a href="javascript:void(0);" class="boton boton--primary">Primary</a>
+                    <a href="javascript:void(0);" class="boton boton--success">Success</a>
+                    <a href="javascript:void(0);" class="boton boton--info">Info</a>
+                    <a href="javascript:void(0);" class="boton boton--warning">Warning</a>
+                    <a href="javascript:void(0);" class="boton boton--danger">Danger</a> 
+                </div>
+                <div class="col--6">
+                    <button class="boton boton--primary boton--large">Largue button</button>
+                    <a href="javascript:void(0);" class="boton boton--primary">Default button</a>
+                    <a href="javascript:void(0);" class="boton boton--primary boton--small">Small button</a>
+                    <a href="javascript:void(0);" class="boton boton--primary boton--extra__small">Extra small button</a>
+                </div>
+            </div>
+
+        </div> 
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <img src="img/descarga.svg" class="main-menu__hamburger" onclick="toggleVisibilityMenu()">
+        <ul class="main-menu">
+            <li class="main-menu__item"><a href="http://www.google.es">Google</a></li>
+            <li class="main-menu__item"><a href="http://www.spacex.com/">SpaceX</a></li>
+            <li class="main-menu__item"><a href="http://www.w3schools.com/js/">JavaScript</a></li>
+            <li class="main-menu__item"><a href="https://github.com/fabio950">GitHub</a></li>
+        </ul>
+        <script>
+            function toggleVisibilityMenu() {
+                var x = document.getElementsByClassName("main-menu__item");
+                for(var i = 0; x.length > i; i++){
+                    if(x[i].className.indexOf("main-menu__item-visible") >= 0){
+                        x[i].className = "main-menu__item main-menu__item-hide";
+                    } else {
+                        x[i].className = "main-menu__item main-menu__item-visible";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

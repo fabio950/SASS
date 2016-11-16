@@ -1,0 +1,12 @@
+@each $messagename, $color, $background-color, $border-color in $format-variations-panel {
+    .message--#{$messagename}{
+        color: $color;
+        font-family: verdana;
+        font-size: 14px;
+        //box-shadow: 10px 10px 20px grey;
+        border-radius: 4px;
+        background-color: $background-color;
+        padding: 15px 15px 15px 12px;
+        border: 1px solid $border-color;
+    }
+}

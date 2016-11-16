@@ -1,0 +1,30 @@
+@each $panelname, $color, $background-color, $border-color in $format-variations-panel {
+    .panel--#{$panelname} {
+        background-color: white;
+        font-family: verdana;
+        font-size: 14px;
+        border-radius: 4px;
+        //box-shadow: 10px 10px 20px grey;
+    }
+
+    .panel__header--#{$panelname}{
+        color: $color;
+        border-radius: 4px 4px 0px 0px;
+        border: 1px solid;
+        border-bottom: 0px;
+        background-color: $background-color;
+        padding: 12px;
+        border-color: $border-color; 
+    }
+
+    .panel__body--#{$panelname} {
+        border-radius: 0px 0px 4px 4px;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+        border-left: 1px solid;
+        border-top: 1px solid;
+        padding: 15px;
+        padding-left: 12px;
+        border-color: $border-color; 
+    }
+}

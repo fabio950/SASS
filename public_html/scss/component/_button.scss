@@ -1,0 +1,23 @@
+.boton {
+    @include boton-generic-format(black, white);
+    border:1px solid;
+    font-family: verdana;
+    padding: 8px 10px 8px 10px;
+    border-radius: 2px;
+    font-size: 14px;
+    text-decoration: none;
+    border-color: #ddd;
+}
+
+@each $buttonname, $color in $format-variations {
+    .boton--#{$buttonname} {
+        @include boton-generic-format(white, $color);
+    }
+}
+
+@each $buttonname, $size, $padding in $size-variatons {
+    .boton--#{$buttonname} {
+        font-size: $size;
+        padding: $padding;
+    }
+}

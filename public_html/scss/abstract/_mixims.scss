@@ -1,0 +1,13 @@
+@mixin boton-generic-format($text-color, $color){
+    color: $text-color;
+    background-color: $color;
+    border-color: darken($color, 10%);
+
+    &:hover {
+        background-color: darken($color, 10%);
+    }
+
+    &:active {
+        box-shadow: 1px 1px 15px darken($color, 20%) inset;
+    }
+}

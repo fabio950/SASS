@@ -1,0 +1,95 @@
+.menu {
+    list-style-type: none;
+}
+
+.menu__item--cerrado {
+    cursor: pointer;
+    font-family: arial;
+    color: white;
+    background-color: #4D5158;
+    border: 1px solid;
+    border-color: #41444A;
+    padding: 20px;
+}
+
+.menu__item--cerrado:before {
+    font-family: FontAwesome;
+    content: "\f07b";
+}
+
+.menu__item--cerrado:after {
+    float: right;
+    font-family: FontAwesome;
+    content: "\f0d7";
+}
+
+.menu__item--abierto {
+    font-family: arial;
+    color: white;
+    background-color: #4D5158;
+    border: 1px solid;
+    border-color: #41444A;
+    padding: 20px; 
+}
+
+.menu__item--abierto:before {
+    font-family: FontAwesome;
+    content: "\f07c";
+}
+
+.menu__item--abierto:after {
+    margin-top: -260px;
+    float: right;
+    font-family: FontAwesome;
+    content: "\f0d8";
+}
+
+.sub__menu--cerrado {
+    display: none;
+}
+
+.sub__menu--abierto {
+    list-style-type: none;
+    margin-left: -20px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    margin-right: -20px;
+}
+
+.sub__menu__item--cerrado {
+    color: white;
+    background-color: #35383D;
+    border: 1px solid;
+    border-color: #41444A;
+    padding: 20px 20px 20px 35px;
+}
+
+.sub__menu__item--cerrado:before {
+    font-family: FontAwesome;
+    content: "\f07b";
+}
+
+.sub__menu__item--cerrado:after {
+    float: right;
+    font-family: FontAwesome;
+    content: "\f0d7";
+}
+
+.sub__menu__item--documento {
+    color: white;
+    background-color: #35383D;
+    border: 1px solid;
+    border-color: #41444A;
+    padding: 20px 20px 20px 35px;
+}
+
+.sub__menu__item--documento:before {
+    font-family: FontAwesome;
+    content: "\f016";
+}
+
+.sub__menu__item--documento:after {
+    float: right;
+    font-family: FontAwesome;
+    content: "\f0d7";
+}

@@ -1,0 +1,18 @@
+$format-variations-panel: (default, black, white, #ddd),
+            (primary, white, #337AB7, #337AB7),
+            (success, #3c763d, #dff0d8, #d6e9c6),
+            (info, #31708f, #d9edf7, #bce8f1),
+            (warning, #8a6d3b, #fcf8e3, #faebcc),
+            (danger, #a94442, #f2dede, #ebccd1);
+
+$format-variations: (primary, #337AB7),
+            (success, #5CB85C),
+            (info, #5BC0DE),
+            (warning, #F0AD4E),
+            (danger, #D9534F);
+            
+$size-variatons: (large, 20px, 12px 20px 12px 20px),
+            (small, 12px, 8px 10px 8px 10px),
+            (extra__small, 10px, 2px 4px 2px 4px);
+            
+$num-columns: 12;
